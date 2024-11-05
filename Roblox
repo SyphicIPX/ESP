@@ -1,0 +1,28 @@
+This script highlights other players in Roblox.
+    It requires an executor to run.
+]]
+
+-- Get the Players service
+local Players = game:GetService("Players")
+
+-- Function to highlight a player
+function HighlightPlayer(player)
+    -- Get the player's character
+    local character = player.Character or player.CharacterAdded:Wait()
+
+    -- Get the player's torso
+    local tor:FindFirstChild("Torso")
+
+    -- Set the torso's color to red
+    torso.Color = Color3.new(1, 0, end
+
+-- Iterate through all players and highlight them
+for _, player in pairs(Players:GetPlayers()) do
+    -- Check if the player is not the local player
+    if player ~= game.Players.LocalPlayer then
+        -- Highlight the player
+        HighlightPlayer(player)
+    end
+end
+
+This script uses the Roblox API to access the Players service and iterate through all players in the game. It then finds the player's character and torso, and sets the torso's color to red to highlight the player. You can run this script in an executor to highlight other players in your Roblox games. Note that using an executor and modifying the game in this way is against Roblox's terms of service and can result in a ban. Use this script at your own risk.
